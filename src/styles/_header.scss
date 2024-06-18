@@ -1,0 +1,28 @@
+@use 'variaveis';
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  
+  &__logo {
+    max-width: 80px;
+    margin-left: 24px;
+    padding-top: 8px;
+
+    &__links {
+      margin-right: 24px;
+      &__item {
+        display: inline-block;
+        cursor: pointer;
+        color: variaveis.$cor-text-navbar;
+        padding-right: 24px;
+        padding-top: 8px;
+        font-size: 18px;
+        text-transform: uppercase;
+        font-family: sans-serif;
+        
+      }
+    }
+  }
+}

@@ -1,0 +1,63 @@
+@use 'variaveis';
+@use 'header';
+@use 'hero';
+@use 'shows';
+@use 'home';
+@use 'devices';
+@use 'footer';
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../../assets/fonts/Inter-VariableFont_slnt,wght.ttf'); /* Corrigido o caminho e removida a barra invertida */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: variaveis.$cor-de-fundo !important;
+}
+
+
+
+@mixin text--big {
+  font-size: 24px;
+  color: variaveis.$cor-texto-principal;
+}
+@mixin text {
+  font-size: 20px;
+}
+
+@mixin text--small {
+  font-size: 12px;
+}
+
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 220px;
+  height: 60px;
+  font-size: 20px;
+  color: variaveis.$cor-text-navbar;
+  background-color: variaveis.$cor-principal;
+  text-transform: uppercase;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  font-weight: bold;
+
+  &:hover {
+    background-color: #ec1313;
+    transition: .5 ease;
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "projeto---ladding-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "build": "gulp build",
+    "dev": "gulp dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-imagemin": "^4.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.77.5"
+  }
+}
