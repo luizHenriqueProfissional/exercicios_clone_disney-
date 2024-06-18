@@ -23,4 +23,4 @@ gulp.watch('./src/styles/*.scss',styles);
 
 
 
-exports.build = gulp.parallel(styles , watchFiles, );
+exports.build = gulp.parallel(styles);
